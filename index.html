@@ -1,0 +1,22 @@
+<html>
+<head>
+  <script language="javascript" type="text/javascript" src="js/p5.js"></script>
+  <script language="javascript" type="text/javascript" src="js/sketch.js"></script>
+  <style> body {padding: 0; margin: 0;} </style>
+</head>
+
+<body>
+  <!-- Change the src to your radio stream.
+      The source you are trying to stream must be set to allow cross origin sharing. 
+      This means that a web domain other than the one your radio stream is hosted on
+      can access and use the sound file.
+      If you plug in your stream URL and nothing plays, chances are you need to allow
+      cross origin sharing on your radio server.-->
+	<audio id="radio" crossOrigin="anonymous">
+		<source src="http://wknc.sma.ncsu.edu:8000/wknchq.ogg">
+	</audio>
+</body>
+
+  <script language="javascript" src="js/radio.js"></script>
+
+</html>
