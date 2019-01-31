@@ -13,9 +13,10 @@
       If you plug in your stream URL and nothing plays, chances are you need to allow
       cross origin sharing on your radio server. This can likely be acheived simply by 
       getting the latest version of Icecast or Shoutcast for your stream.-->
-	<audio id="radio" crossOrigin="anonymous">
-		<source src="http://wknc.sma.ncsu.edu:8000/wknchq.ogg">
-	</audio>
+	<audio id="radio" preload="auto" crossorigin="anonymous">
+		<source src="http://sc8.streammystation.com:7430/stream">
+  </audio>
+  
 </body>
 
   <script language="javascript" src="radio.js"></script>
