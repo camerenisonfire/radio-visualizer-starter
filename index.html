@@ -1,24 +1,31 @@
 <html>
-<head>
-  <script language="javascript" type="text/javascript" src="p5.js"></script>
-  <script language="javascript" type="text/javascript" src="sketch.js"></script>
-  <style> body {padding: 0; margin: 0;} </style>
-</head>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+    <script
+      language="javascript"
+      type="text/javascript"
+      src="sketch.js"
+    ></script>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+  </head>
 
-<body>
-  <!-- Change the src to your radio stream.
+  <body>
+    <!-- Change the src to your radio stream.
       The source you are trying to stream must be set to allow cross origin sharing. 
       This means that a web domain other than the one your radio stream is hosted on
       can access and use the sound file.
       If you plug in your stream URL and nothing plays, chances are you need to allow
       cross origin sharing on your radio server. This can likely be acheived simply by 
       getting the latest version of Icecast or Shoutcast for your stream.-->
-	<audio id="radio" preload="auto" crossorigin="anonymous">
-		<source src="http://sc8.streammystation.com:7430/stream">
-  </audio>
-  
-</body>
+    <audio id="radio" preload="auto" crossorigin="anonymous">
+      <source src="http://sc8.streammystation.com:7430/stream" />
+    </audio>
+  </body>
 
   <script language="javascript" src="radio.js"></script>
-
 </html>
