@@ -3,9 +3,9 @@ let analyser, source;
 let audioElement = document.getElementById("radio");    //gets the element in the HTML document with the id="radio"
 
 window.onload = function () {
-    
+
     // Start playing the radio stream when document is clicked
-    document.getElementById('defaultCanvas').addEventListener("click", function () {
+    document.getElementById('defaultCanvas0').addEventListener("click", function () {
         audioElement.play();
         let context = new (window.AudioContext || window.webkitAudioContext)();       //Tells the browser we want to use Audio for out analyser
 
@@ -21,5 +21,5 @@ window.onload = function () {
         // Once the analyser has broken down the audio frequency, the number of data points we get back is half the size of the fftSize  
         console.log(analyser.frequencyBinCount);
 
-    }); 
+    });
 }
